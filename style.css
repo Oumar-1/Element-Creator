@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  min-height: 100vh;
+  font-size: 1.2rem;
+}
+#remove {
+  cursor: pointer;
+  margin: 0;
+  background-color: white;
+  padding: 0.3em;
+  color: red;
+  font-size: 25px;
+}
+form {
+  position: relative;
+  width: 100%;
+}
+.wrapper{
+  background: #eab543;
+  padding: 30px;
+  border-radius: 26px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: max-content;
+  margin: 0 auto;
+}
+form h2 {
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+}
+form input {
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  outline: none;
+  border: none;
+}
+form input[type="submit"] {
+  background: #58b19f;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+form select[name="type"] {
+  font-size: 1em;
+  min-height: 40px;
+  padding-left: 15px;
+}
+form input::placeholder {
+  font-size: 0.8em;
+}
+.result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  gap: 15px;
+  width: 100%;
+  transform: translateX(-50%);
+}
+.box {
+  background-color: #7fffd4;
+  color:black;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0.5em  0.8em;
+}
